@@ -1,0 +1,132 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "poppins",sans-serif;
+  background-color: rgba(255,221,225,1);
+  background: url("images/sky.jpg") no-repeat;
+  background-size: cover;
+overflow: hidden;
+height: 100vh; /* background image takes up the entire screen */
+}
+
+.container{
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+}
+
+.card{
+  border-radius: 17px;
+  width: 18em;
+background: rgb(221,233,255);
+background: linear-gradient(59deg, rgba(221,233,255,0.9) 40%, rgba(255,221,225,0.8) 64%);
+backdrop-filter: blur(8px);
+padding-top: 30px;
+box-shadow:  5px 5px 20px  #A9A9A9,
+             -5px -5px 20px #A9A9A9;
+
+
+}
+
+.search{
+  border-radius: 25px;
+  padding: 0.4em;
+border-color: rgba(192,192,192,0.3);
+}
+
+.search:hover, .search:focus {
+  outline: none;
+}
+
+
+button{
+  border: none;
+  outline: none;
+background-color: transparent;
+color: #a6a6a6;
+font-size: 1.1em;
+}
+
+.infoTxt{
+  color:#737373;
+  font-size: 15px;
+  padding-top: 20px;
+}
+
+.location-icon{
+  padding: 5px;
+  color: #ff3333;
+}
+
+
+.location-container{
+  padding-top: 30px;
+  margin-right: 20px;
+font-size: 15px;
+color:#737373;
+}
+
+.temp-card-container{
+  display: flex;
+  margin: 20px 30px 20px 30px;
+  padding:20px 0  20px 0 ;
+/*color:	hsl(15, 0%, 45%);*/
+background-color: rgba(197,197,197,0.6);
+border-radius: 10px;
+}
+
+
+.temp{
+padding: 10px;
+margin-left: 20px;
+margin-top:10px;
+color:rgb(248,248,255);
+font-size: 35px;
+font-weight: 400;
+text-shadow: 1px 3px rgba(115,115,115, 0.6);
+}
+
+.img{
+margin-left: 10px;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+flex-direction: row;
+list-style-type: none;
+flex-wrap: wrap;
+justify-content: space-around;
+padding: 10px 10px 20px 10px ;
+color:rgba(115,115,115, 0.6);
+font-size: 12px;
+}
+
+.p1 ,.p2, .p3{
+  display: block;
+color:#737373;
+}
+
+.cloud1,.cloud2{
+  position: absolute;
+}
+
+.cloud1{
+  transform: translate(50%,-65%);
+}
+
+.cloud2{
+  transform: translate(-54%,74%);
+}
+
+.hidden{
+  display: none;
+}
